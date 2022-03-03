@@ -1,0 +1,60 @@
+@import "_variables";
+
+header {
+    background-color: $white;
+    padding: 10px 0;
+
+    .container {
+
+        display: flex;
+        align-items: center;
+
+        .header-left {
+
+            width: 50%;
+            height: 100%;
+
+            img {
+                height: 60px;
+            }
+
+        }
+
+        .header-right {
+            height: 100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+
+                display: flex;
+                margin: 0;
+
+                li {
+                    text-transform: uppercase;
+                    padding: 0 20px;
+                    font-size: 14px;
+
+
+                    a {
+                        color: inherit;
+                        text-decoration: inherit;
+
+                        &:hover {
+                            border-bottom: 4px solid $primary-color;
+                        }
+
+                    }
+
+                }
+
+
+
+            }
+
+        }
+
+
+    }
+}
