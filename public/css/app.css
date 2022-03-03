@@ -12357,3 +12357,47 @@ main .container .row .col-2 .card-box p {
   color: #fff;
 }
 
+main .container .load-more {
+  text-align: center;
+  width: 200px;
+  padding: 10px 18px;
+  background-color: #0282f9;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.info-content {
+  background-color: #0282f9;
+  height: 110px;
+}
+
+.info-content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.info-content .container ul {
+  display: flex;
+}
+
+.info-content .container ul li {
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.info-content .container ul li .info-icon img {
+  height: 43px;
+}
+
+.info-content .container ul li .info-text {
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
