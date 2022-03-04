@@ -13,43 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'HomeController@index')->name('home');
 
-    $comicsData = config('comics');
-
-    $infoMenu = [
-        [
-            'img' => 'buy-comics-digital-comics.png',
-            'text' => 'digital comics'
-        ],
-        [
-            'img' => 'buy-comics-merchandise.png',
-            'text' => 'dc merchandise'
-        ],
-        [
-            'img' => 'buy-comics-subscriptions.png',
-            'text' => 'subscription'
-        ],
-        [
-            'img' => 'buy-comics-shop-locator.png',
-            'text' => 'comic shop locator'
-        ],
-        [
-            'img' => 'buy-dc-power-visa.svg',
-            'text' => 'dc power visa'
-        ],
-    ];
-
-    return view('home', compact('comicsData', 'infoMenu'));
-})->name('home');
 
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
+Route::get('/comics','ComicController@index')->name('comics.home');
+Route::get('/comics/{id}','ComicController@read')->name('comics.details');
 
 Route::get('/movies', function () {
     return view('movies');

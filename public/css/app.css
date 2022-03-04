@@ -12401,3 +12401,78 @@ main .container .load-more {
   text-transform: uppercase;
 }
 
+.details .blue-bar {
+  height: 60px;
+  background-color: #0282f9;
+  position: relative;
+}
+
+.details .blue-bar .card-img {
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  bottom: 20px;
+  border: solid 1px #fff;
+}
+
+.details .blue-bar .card-img .img-info {
+  display: inline;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 1px 6px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #00a9d9;
+}
+
+.details .blue-bar .card-img .img-info:last-child {
+  text-align: center;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.details .blue-bar .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.details .info-comic h3,
+.details .info-comic .h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.details .info-comic .check-bar {
+  height: 50px;
+  background-color: #55ba59;
+}
+
+.details .info-comic .check-bar .price {
+  height: 100%;
+  width: 70%;
+  border-right: 1px solid black;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.details .info-comic .check-bar .price .text-gray {
+  color: lightgray;
+}
+
+.details .info-comic .check-bar .price .text-gray:last-child {
+  text-transform: uppercase;
+}
+
+.details .info-comic .check-bar .check {
+  text-transform: capitalize;
+  height: 100%;
+  width: 30%;
+  padding: 0 25px;
+}
+
+.details .info-comic p {
+  line-height: 27px;
+}
+

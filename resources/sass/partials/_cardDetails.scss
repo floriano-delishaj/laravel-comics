@@ -1,0 +1,73 @@
+.details{
+    .blue-bar {
+        height: 60px;
+        background-color: $primary-color;
+        position: relative;
+        .card-img {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            bottom: 20px;
+            border: solid 1px $white;
+
+            .img-info {
+                display: inline;
+                text-transform: uppercase;
+                position: absolute;
+                padding: 1px 6px;
+                color: $white;
+                font-size: 12px;
+                background-color: $light-primary-color;
+
+                &:last-child {
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+            }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+    .info-comic {
+        h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .check-bar {
+            height: 50px;
+            background-color: $green;
+
+            .price {
+                height: 100%;
+                width: 70%;
+                border-right: 1px solid black;
+                padding: 0 20px;
+                font-weight: bold;
+                .text-gray {
+                    color: lightgray;
+
+                    &:last-child {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .check {
+                text-transform: capitalize;
+                height: 100%;
+                width: 30%;
+                padding: 0 25px;
+            }
+        }
+
+        p {
+            line-height: 27px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <?php
 $navList = [
     'characters' => 'characters',
-    'comics' => 'comics',
+    'comics.home' => 'comics',
     'movies' => 'movies',
     'tv' => 'tv',
     'games' => 'games',
